@@ -9,7 +9,11 @@ import net.minecraft.nbt.NbtCompound;
 import net.minecraft.nbt.NbtElement;
 import net.minecraft.nbt.NbtList;
 import org.jetbrains.annotations.Nullable;
+/*
+Credit: QuickCarpet 
+This Code Is Addapted From QuickCarpet
 
+*/
 
 
 public class nbtutil {
