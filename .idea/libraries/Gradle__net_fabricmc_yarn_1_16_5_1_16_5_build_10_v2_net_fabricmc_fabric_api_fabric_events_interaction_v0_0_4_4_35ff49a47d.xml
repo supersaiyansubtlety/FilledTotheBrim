@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: net_fabricmc_yarn_1_16_5_1_16_5_build_10_v2.net.fabricmc.fabric-api:fabric-events-interaction-v0:0.4.4+35ff49a47d">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_16_5_1_16_5_build_10_v2/net/fabricmc/fabric-api/fabric-events-interaction-v0/0.4.4+35ff49a47d/fabric-events-interaction-v0-0.4.4+35ff49a47d.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$PROJECT_DIR$/.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_16_5_1_16_5_build_10_v2/net/fabricmc/fabric-api/fabric-events-interaction-v0/0.4.4+35ff49a47d/fabric-events-interaction-v0-0.4.4+35ff49a47d-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

@@ -1,0 +1,6 @@
+com/Jack/FilledToTheBrim/util/nbtutil.java
+ com.Jack.FilledToTheBrim.util.nbtutil
+com/Jack/FilledToTheBrim/FilledToTheBrim.java
+ com.Jack.FilledToTheBrim.FilledToTheBrim
+com/Jack/FilledToTheBrim/mixin/ShulkerBoxSlotMixin.java
+ com.Jack.FilledToTheBrim.mixin.ShulkerBoxSlotMixin
