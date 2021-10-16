@@ -1,4 +1,9 @@
 # Filled To The Brim
 
-a Mod allows you to put empty shulkerboxes in Shulker Boxes
+A mod that allows you to put empty Shulkerboxes in Shulker Boxes
+
+
+# Soon?
+On Off Config? Maybe add to a Carpet Fork.
+
 
