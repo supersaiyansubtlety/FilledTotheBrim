@@ -13,31 +13,17 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 
 
-/*
-@Mixin(ShulkerBoxSlot.class)
-public class ShulkerBoxSlotMixin {
-	@Inject(method = "canInsert", at = @At("HEAD"), cancellable = true) //canInsert(Lnet/minecraft/item/ItemStack;)Z
-	private void injected(ItemStack stack, CallbackInfo cir) {
 
-		System.out.println("Testing.");
-        ci.setReturnValue(true);
-        //cir.setReturnValue(true); // Return cir.getReturnValue()
-	}
-
-}
-*/
-///*
 @Mixin({ShulkerBoxSlot.class})
 public class ShulkerBoxSlotMixin {
-    public ShulkerBoxSlotMixin() {
-    }
+
 
     @Inject(method = "canInsert", at = @At("HEAD"), cancellable = true)
     private void canInsert(ItemStack stack, CallbackInfoReturnable<Boolean> ci) {
         boolean isemptyshulkeritem = Block.getBlockFromItem(stack.getItem()) instanceof ShulkerBoxBlock && nbtutil.isEmptyShulkerBox(stack);
-                //return !(Block.getBlockFromItem(stack.getItem()) instanceof ShulkerBoxBlock);
+                //return !(Block.getBlockFromItem(stack.getItem()) instanceof ShulkerBoxBlock); //MC Code (Yarn)
         ci.setReturnValue(!(Block.getBlockFromItem(stack.getItem()) instanceof ShulkerBoxBlock) || isemptyshulkeritem);
-        //non Bool.. just setting here cause.
+        //Long Version idk if it works with order...
         //ci.setReturnValue(!(Block.getBlockFromItem(stack.getItem()) instanceof ShulkerBoxBlock) || Block.getBlockFromItem(stack.getItem()) instanceof ShulkerBoxBlock && nbtutil.isEmptyShulkerBox(stack));
     }
 }
