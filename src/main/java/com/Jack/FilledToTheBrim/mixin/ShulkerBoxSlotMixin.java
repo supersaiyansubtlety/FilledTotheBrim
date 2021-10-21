@@ -27,4 +27,3 @@ public class ShulkerBoxSlotMixin {
         //ci.setReturnValue(!(Block.getBlockFromItem(stack.getItem()) instanceof ShulkerBoxBlock) || Block.getBlockFromItem(stack.getItem()) instanceof ShulkerBoxBlock && nbtutil.isEmptyShulkerBox(stack));
     }
 }
-//*/
