@@ -34,7 +34,7 @@ public class nbtutil {
 
     @Nullable
     public static NbtCompound getBlockEntityTag(ItemStack stack) {
-        NbtCompound tag = stack.getTag();
+        NbtCompound tag = stack.getNbt();
         return tag == null ? null : getTagOrNull(tag, "BlockEntityTag", TAG_COMPOUND);
     }
 
@@ -57,7 +57,7 @@ public class nbtutil {
         }
 
         if (bet.isEmpty()) {
-            stack.setTag(null);
+            stack.setNbt(null);
             changed = true;
         }
 
