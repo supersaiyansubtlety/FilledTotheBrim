@@ -1,7 +1,37 @@
-.idea/
+
+
+
+
+
+
+
+
+
+# gradle
+
 .gradle/
 build/
-old/
+!buildSrc/src/**
+out/
+
+
+# idea
+
+.idea/
+.shelf/
+*.iml
+*.ipr
+*.iws
+
+
+
+# fabric
+
 run/
-*.jar
+/logs/
+credentials.properties
+
+# other
+old/
 *.class
+*.jar
