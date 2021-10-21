@@ -1,6 +1,7 @@
-/.idea
-/.gradle
-/build
-/old
-/run
+.idea/
+.gradle/
+build/
+old/
+run/
 *.jar
+*.class
