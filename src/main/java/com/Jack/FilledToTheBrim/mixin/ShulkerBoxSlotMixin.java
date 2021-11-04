@@ -19,10 +19,12 @@ public class ShulkerBoxSlotMixin {
 
     @Inject(method = "canInsert", at = @At("HEAD"), cancellable = true)
     private void canInsert(ItemStack stack, CallbackInfoReturnable<Boolean> ci) {
-        boolean isemptyshulkeritem = Block.getBlockFromItem(stack.getItem()) instanceof ShulkerBoxBlock && nbtutil.isEmptyShulkerBox(stack);
-                //return !(Block.getBlockFromItem(stack.getItem()) instanceof ShulkerBoxBlock); //MC Code (Yarn)
-        ci.setReturnValue(!(Block.getBlockFromItem(stack.getItem()) instanceof ShulkerBoxBlock) || isemptyshulkeritem);
-        //Long Version idk if it works with order...
-        //ci.setReturnValue(!(Block.getBlockFromItem(stack.getItem()) instanceof ShulkerBoxBlock) || Block.getBlockFromItem(stack.getItem()) instanceof ShulkerBoxBlock && nbtutil.isEmptyShulkerBox(stack));
+        //boolean isemptyshulkeritem = Block.getBlockFromItem(stack.getItem()) instanceof ShulkerBoxBlock && nbtutil.isEmptyShulkerBox(stack);
+        //return !(Block.getBlockFromItem(stack.getItem()) instanceof ShulkerBoxBlock); //MC Code (Yarn)
+        //ci.setReturnValue(!(Block.getBlockFromItem(stack.getItem()) instanceof ShulkerBoxBlock) || isemptyshulkeritem);//Double Checks
+
+        ci.setReturnValue(!(Block.getBlockFromItem(stack.getItem()) instanceof ShulkerBoxBlock) || nbtutil.isEmptyShulkerBox(stack));//Single Check in nbtutil
+
+
     }
 }
