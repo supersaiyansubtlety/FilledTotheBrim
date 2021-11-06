@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "id": "fttb",
+  "id": "filledtothebrim",
   "version": "${version}",
 
   "name": "Filled To The Brim",
@@ -9,12 +9,12 @@
     "Jack"
   ],
   "contact": {
-    "homepage": "https://fabricmc.net/",
-    "sources": "https://github.com/JacktheDevel0per/FilledTotheBrim"
+    "homepage": "https://github.com/JacktheDevel0per",
+    "sources": "https://github.com/JacktheDevel0per/FilledToTheBrim"
   },
 
   "license": "MIT",
-  "icon": "assets/fttb/icon.png",
+  "icon": "assets/FilledToTheBrim/icon.png",
 
   "environment": "*",
   "entrypoints": {
@@ -23,7 +23,7 @@
     ]
   },
   "mixins": [
-    "fttb.mixins.json"
+    "FilledToTheBrim.mixins.json"
   ],
 
   "depends": {
@@ -32,6 +32,6 @@
     "minecraft": "1.16.x"
   },
   "suggests": {
-    "QuickCarpet":"*"
+    "Carbon":"*"
   }
 }
