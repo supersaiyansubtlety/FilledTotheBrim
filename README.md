@@ -10,9 +10,8 @@ A mod that allows you to put empty Shulkerboxes in Shulker Boxes
 
 # Soon?
 
-Updating to 1.17.1 
-Maybe also Downgrading to older versions...
+Add as Carpet Rule in Carbon
 
-On Off Config? Maybe add to a Carpet Fork.
+Full Support for Hoppers, Droppers and other non player Filling Actions
 
 

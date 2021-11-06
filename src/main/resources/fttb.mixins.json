@@ -4,7 +4,8 @@
   "package": "com.Jack.FilledToTheBrim.mixin",
   "compatibilityLevel": "JAVA_8",
   "mixins": [
-    "ShulkerBoxSlotMixin"
+    "ShulkerBoxSlotMixin",
+    "ShulkerBoxBlockEntityMixin"
   ],
   "client": [
   ],
