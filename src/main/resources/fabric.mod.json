@@ -14,7 +14,7 @@
   },
 
   "license": "MIT",
-  "icon": "assets/FilledToTheBrim/icon.png",
+  "icon": "assets/filledtothebrim/icon.png",
 
   "environment": "*",
   "entrypoints": {
@@ -32,9 +32,6 @@
     "minecraft": "1.16.x"
   },
   "suggests": {
-    "Carbon":"*"
-  },
-  "breaks": {
-    "fttb": "*"
+    "carbon":"*"
   }
 }
