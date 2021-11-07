@@ -14,7 +14,7 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 
 
 
-@Mixin({ShulkerBoxSlot.class})
+@Mixin(value = ShulkerBoxSlot.class, priority = 69)
 public class ShulkerBoxSlotMixin {
 
 
