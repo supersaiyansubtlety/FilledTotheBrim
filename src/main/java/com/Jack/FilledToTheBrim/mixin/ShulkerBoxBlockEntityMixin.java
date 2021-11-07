@@ -12,7 +12,7 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 
 
 
-@Mixin(ShulkerBoxBlockEntity.class)
+@Mixin(value = ShulkerBoxBlockEntity.class, priority = 69)
 public class ShulkerBoxBlockEntityMixin {
 
     @Inject(method = "canInsert", at = @At("HEAD"), cancellable = true)
