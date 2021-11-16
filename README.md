@@ -10,7 +10,7 @@ A mod that allows you to put empty Shulkerboxes in Shulker Boxes
 
 # Features
 
-- Empty Shulkers Can Fit in OTher Shulker Boxes
+- Empty Shulkers Can Fit in other Shulker Boxes
 -Shulker Boxes Stack and Send Correct Comparator Output For Being Stacked
 
 
