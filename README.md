@@ -8,10 +8,9 @@ A mod that allows you to put empty Shulkerboxes in Shulker Boxes
 [CurseForge](https://www.curseforge.com/minecraft/mc-mods/filled-to-the-brim)
 
 
-# Soon?
+# Features
 
-Add as Carpet Rule in Carbon
-
-Full Support for Hoppers, Droppers and other non player Filling Actions
+- Empty Shulkers Can Fit in other Shulker Boxes
+-Shulker Boxes Stack and Send Correct Comparator Output For Being Stacked
 
 
