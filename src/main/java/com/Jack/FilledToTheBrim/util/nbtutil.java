@@ -75,4 +75,7 @@ public class nbtutil {
         Item item = stack.getItem();
         return item instanceof BlockItem && ((BlockItem) item).getBlock() instanceof ShulkerBoxBlock && !hasShulkerBoxItems(stack);
     }
+
+
 }
+

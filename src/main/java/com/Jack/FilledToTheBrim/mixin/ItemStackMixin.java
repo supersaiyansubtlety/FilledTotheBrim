@@ -4,6 +4,7 @@ package com.Jack.FilledToTheBrim.mixin;
 
 
 import com.Jack.FilledToTheBrim.FilledToTheBrim;
+import com.Jack.FilledToTheBrim.util.nbtutil;
 import net.minecraft.block.Block;
 import net.minecraft.block.ShulkerBoxBlock;
 import net.minecraft.item.Item;
@@ -23,12 +24,11 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 public class ItemStackMixin {
 
 
-    //@Shadow @Final public Item getItem;
+
     @Shadow @Final public Item item;
     @Shadow private boolean empty;
     public Item getItem() {
         return empty ? Items.AIR : this.item;
-        //return empty ? Items.AIR : this.item == null ? Items.AIR : this.item;//Idk
     }
 
 
@@ -36,12 +36,7 @@ public class ItemStackMixin {
     private void ShulkerStackSize(CallbackInfoReturnable<Integer> ci) {
 
 
-        //boolean isEmptyShulkerBoxandisEnabled = nbtutil.isEmptyShulkerBox("here") && FilledToTheBrim.IS_ENABLED;
-
-
-
-
-        if (Block.getBlockFromItem(getItem()) instanceof ShulkerBoxBlock && FilledToTheBrim.IS_ENABLED) {
+        if (nbtutil.isEmptyShulkerBox(((ItemStack) (Object) this)) && FilledToTheBrim.IS_ENABLED) {
             //FilledToTheBrim.LOGGER.info(FilledToTheBrim.SHULKERBOX_STACK_SIZE);//Debug (Lot of Logs So don't use in normal env)
             ci.setReturnValue(FilledToTheBrim.SHULKERBOX_STACK_SIZE);
         }
@@ -51,31 +46,6 @@ public class ItemStackMixin {
         }
 
 
-        //ci.setReturnValue(64);
-
-    }
-
-
-}
-
-/*
- boolean isEmptyShulkerBoxandisEnabled = nbtutil.isEmptyShulkerBox(stack) && FilledToTheBrim.IS_ENABLED;
-
-        return !(Block.getBlockFromItem(stack.getItem()) instanceof ShulkerBoxBlock) || isEmptyShulkerBoxandisEnabled;
- */
-
-
-
-
-
-
-
-/*
-
-
-        return !(Block.getBlockFromItem(stack.getItem()) instanceof ShulkerBoxBlock) || isEmptyShulkerBoxandisEnabled;
     }
 
 }
-
-*/
