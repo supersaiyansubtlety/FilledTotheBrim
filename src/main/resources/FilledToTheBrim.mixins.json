@@ -7,7 +7,8 @@
     "CrashReportMixin",
     "ShulkerBoxSlotMixin",
     "ItemStackMixin",
-    "ShulkerBoxBlockEntityMixin"
+    "ShulkerBoxBlockEntityMixin",
+    "ScreenHandlerMixin"
 
   ],
   "client": [

@@ -14,6 +14,7 @@ public class FilledToTheBrim implements ModInitializer {
 
     //Does Not Care For Carpet Rule But Keeps it on So Yeah. Not Toggleable (Yet?)
     public static Integer SHULKERBOX_STACK_SIZE = 64;
+    public static boolean SHULKERBOX_COMPARATOR_OVERLOAD_FIX= true;
 
 
 

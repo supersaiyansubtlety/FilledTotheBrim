@@ -22,7 +22,7 @@ public class ItemStackMixin {
     private void ShulkerStackSize(CallbackInfoReturnable<Integer> ci) {
 
         if (nbtutil.isEmptyShulkerBox(((ItemStack) (Object) this)) && FilledToTheBrim.IS_ENABLED) {
-
+            //TODO: Fix This Not Working in Non Dev For Some Reason (Works But Does Not Effect Comparators) Might Be Connected to another Mod
             ci.setReturnValue(FilledToTheBrim.SHULKERBOX_STACK_SIZE);
 
         }
