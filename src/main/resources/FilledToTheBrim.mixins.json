@@ -7,10 +7,10 @@
     "CrashReportMixin",
     "ShulkerBoxSlotMixin",
     "ItemStackMixin",
-    "ShulkerBoxBlockEntityMixin",
-    "ScreenHandlerMixin"
+    "ShulkerBoxBlockEntityMixin"
 
   ],
+  "notmixins": "ScreenHandlerMixin",
   "client": [
   ],
   "server": [
