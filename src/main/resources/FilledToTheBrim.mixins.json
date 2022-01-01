@@ -4,17 +4,8 @@
   "package": "com.Jack.FilledToTheBrim.mixin",
   "compatibilityLevel": "JAVA_8",
   "mixins": [
-    "CrashReportMixin",
     "ShulkerBoxSlotMixin",
-    "ItemStackMixin",
     "ShulkerBoxBlockEntityMixin"
-
-  ],
-  "notmixins": "ScreenHandlerMixin",
-  "client": [
-  ],
-  "server": [
-
   ],
   "injectors": {
     "defaultRequire": 1

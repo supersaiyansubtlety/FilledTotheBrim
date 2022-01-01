@@ -2,9 +2,6 @@ package com.Jack.FilledToTheBrim.mixin;
 
 
 import com.Jack.FilledToTheBrim.util.canInsert;
-import com.Jack.FilledToTheBrim.util.nbtutil;
-import net.minecraft.block.Block;
-import net.minecraft.block.ShulkerBoxBlock;
 import net.minecraft.item.ItemStack;
 import net.minecraft.screen.slot.ShulkerBoxSlot;
 import org.spongepowered.asm.mixin.Mixin;
