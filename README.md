@@ -11,6 +11,6 @@ A mod that allows you to put empty Shulkerboxes in Shulker Boxes
 
 Maybe Downgrading to older versions...
 
-Maybe add to a Carpet Fork.
+On Off Config? Maybe add to a Carpet Fork.
 
 
